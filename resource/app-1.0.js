@@ -65,7 +65,7 @@ function gotoNews(){
 function gotoVoiceChat(){
     goto(3,function(){
         document.title='语音电话';
-        var audio = loadAudio('./resource/call.mp3');
+        var audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/call.mp3');
         audio.loop=true;
         document.querySelector('.btn-jieting').addEventListener('click',function(){
             audio.pause();
@@ -77,7 +77,7 @@ function gotoVoiceChat(){
 function gotoAcceptVoiceChat(){
     goto(4,function(){
         document.title='语音电话';
-        var audio = loadAudio('./resource/voice.mp3');
+        var audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/voice.mp3');
         var _time= 1,__time=1;
         window._timerhandle=setInterval(function(){
             _time++;
@@ -90,7 +90,7 @@ function gotoAcceptVoiceChat(){
                 goto(5,function(){
                     document.title='戈友';
                     setTimeout(function(){
-                        loadAudio('./resource/message.mp3');
+                        loadAudio('http://cdn.happyjuzi.com/geshang/resource/message.mp3');
                         document.querySelector('.part5-btn').style.display='block';
                     },1000)
                 })

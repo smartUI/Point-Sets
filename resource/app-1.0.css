@@ -11,7 +11,7 @@ a, body, div, footer, h1, h2, h3, h4, h5, h6, header, html, img, input, li, p, s
 
 */
 
-.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(sprite.png);background-size:8.8rem 5.24rem}
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url("http://cdn.happyjuzi.com/geshang/resource/sprite.png");background-size:8.8rem 5.24rem}
 
 .btn-guaduan {width:1.24rem; height:1.74rem; background-position: -1.33rem -3.48rem}
 .btn-jieting {width:1.25rem; height:1.74rem; background-position: -4.49rem -0.98rem}
@@ -37,20 +37,20 @@ a, body, div, footer, h1, h2, h3, h4, h5, h6, header, html, img, input, li, p, s
 .loading { position: absolute; top: 50%; left: 50%; z-index: 99; margin-left: -.5rem; margin-top: -.5rem; display: none; background-color: transparent; width: 1rem; height: 1rem; border: 3px solid #1abc9c; border-radius: 50%; border-top-color: transparent; border-left-color: transparent; -webkit-transition: all .25s; transition: all .25s; -moz-transition: all .25s; -webkit-animation: rotate .6s linear infinite; -moz-animation: rotate .6s linear infinite; animation: rotate 1s linear infinite; }
 
 .part { position: relative;width:6.4rem;overflow-x:hidden;}
-.part1{ box-sizing: border-box;background:url("part1-bg.png") no-repeat 0 0; background-size:6.4rem 9.17rem; height: 9.17rem; padding-bottom:.94rem;border-top: .1rem solid #F9F9F9;}
+.part1{ box-sizing: border-box;background:url("http://cdn.happyjuzi.com/geshang/resource/part1-bg.png") no-repeat 0 0; background-size:6.4rem 9.17rem; height: 9.17rem; padding-bottom:.94rem;border-top: .1rem solid #F9F9F9;}
 .part1 .part1-footer{position:fixed;bottom:0;left:0;}
 .part1 .part1-footer span{font-size: .25rem; line-height: .94rem; display: block; height: 100%; padding-left: .4rem; color: #C0BFC0;}
 .part1 .part1-goto{ position: absolute; top: 0.9rem; height: 1rem; width: 5rem; left: 1.22rem; }
 .part1 .dian { right: 0; position: absolute; top: -0.5rem; z-index: 99; animation: "scaledian" 3s infinite; -webkit-animation: "scaledian" 3s infinite; }
 
-.part2 { background: #F6F6F6 url("part2-bg.png?1") no-repeat 0 .1rem;background-size:6.4rem 17.11rem; height: 17.11rem; }
+.part2 { background: #F6F6F6 url("http://cdn.happyjuzi.com/geshang/resource/part2-bg.png") no-repeat 0 .1rem;background-size:6.4rem 17.11rem; height: 17.11rem; }
 
-.part3{ background:#21252B url("part34-bg.png") no-repeat 0 0; background-size:6.4rem 11.05rem; height: 11.05rem; }
+.part3{ background:#21252B url("http://cdn.happyjuzi.com/geshang/resource/part34-bg.png") no-repeat 0 0; background-size:6.4rem 11.05rem; height: 11.05rem; }
 .part3 .invite-chat{ padding-top: 6rem; font-size: .26rem; text-align: center; color: #fff; }
 .part3 .btn-jieting { position: absolute; bottom: .5rem; right: .5rem; }
 .part3 .btn-jujue { position: absolute; bottom: .5rem; left: .5rem; }
 
-.part4{ background:#21252B url("part34-bg.png") no-repeat 0 0; background-size:6.4rem 11.05rem; height: 11.05rem; }
+.part4{ background:#21252B url("http://cdn.happyjuzi.com/geshang/resource/part34-bg.png") no-repeat 0 0; background-size:6.4rem 11.05rem; height: 11.05rem; }
 .part4 .part4-zoom{ position: absolute; left: .2rem; top: .2rem; }
 .part4 .part4-tips{ position: absolute; top: 6rem; left: 0.7rem; }
 .part4 .time{ font-size: .3rem; text-align: center; width: 100%; position: absolute; top: 7.4rem; color: #ddd; letter-spacing: 3px; }
@@ -74,16 +74,16 @@ a, body, div, footer, h1, h2, h3, h4, h5, h6, header, html, img, input, li, p, s
     100%{ transform: scale(.8); -webkit-transform: scale(.8); opacity: 1; }
 }
 
-.part6{ background:url("part6-bg.png") no-repeat 0 0; background-size:6.4rem 11.36rem; height: 11.36rem; }
+.part6{ background:url("http://cdn.happyjuzi.com/geshang/resource/part6-bg.png") no-repeat 0 0; background-size:6.4rem 11.36rem; height: 11.36rem; }
 .part6 .input-name:focus{ }
 
 .part6 .input-name{ position: absolute; top: 2.74rem; left: 2.11rem; width: 2.3rem; height: .75rem; background-color: transparent; letter-spacing: 0.3rem; box-sizing: border-box; font-size: .5rem; color: #690100; font-weight: bold; }
 .part6 .submit{ position: absolute; bottom: 2.3rem; display: block; width: 1.5rem; height: .8rem; left: 2.4rem; }
 
-.part7{ background:url("part7-bg.png") no-repeat 0 0; background-size:6.4rem 11.36rem; height: 11.36rem; }
+.part7{ background:url("http://cdn.happyjuzi.com/geshang/resource/part7-bg.png") no-repeat 0 0; background-size:6.4rem 11.36rem; height: 11.36rem; }
 .part7 .share-friend{ position: absolute; bottom: .25rem; display: block; width: 2rem; height: .8rem; left: 1.2rem; }
 .part7 .get-invite{ position: absolute; bottom: .25rem; display: block; width: 2rem; height: .8rem; right: 1.1rem; }
 .part7 .myname{ position: absolute; left: 4.25rem; font-size: .3rem; color: #241A16; top: 3rem; writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr; }
-.weixin{ background:url('http://cdn.happyjuzi.com/geshang/img/share.png') no-repeat; background-size:6.4rem; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 99; }
+.weixin{ background:url("http://cdn.happyjuzi.com/geshang/img/share.png") no-repeat; background-size:6.4rem; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 99; }
 
 body,.part{position:absolute;min-height:100%;min-width:100%;}
