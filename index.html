@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>朋友圈</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="resource/app.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Author: jianhua, Last: 16/5/15 -->
+<img src="./resource/share-icon.png" style="position:absolute;width:1px; height:1px;z-index:-11;left:-10px;top:-10px">
+<div class="bg loading-wrapper">
+    <div class="loading"></div>
+    <div class="progress" id="progress">正在加载中 (<span id="progress-num">8</span>%)</div>
+</div>
+<section class="part part1" style="display:none">
+    <a href="javascript:;" class="part1-goto" onclick="gotoNews();">
+        <span class="sprite dian"></span>
+    </a>
+    <div class="sprite part1-footer">
+        <span>评论</span>
+    </div>
+</section>
+<section class="part part2" style="display:none">
+
+</section>
+<section class="part part3" style="display:none">
+    <div class="invite-chat">邀请你语音聊天</div>
+    <a href="javascript:;" class="sprite btn-jujue"></a>
+    <a href="javascript:;" class="sprite btn-jieting"></a>
+</section>
+<section class="part part4" style="display:none">
+    <div class="sprite part4-zoom"></div>
+    <div class="sprite part4-tips"></div>
+    <div class="time" id="time">00:01</div>
+    <a href="javascript:;" class="sprite btn-jingying"></a>
+    <a href="javascript:;" class="sprite btn-guaduan"></a>
+    <a href="javascript:;" class="sprite btn-mianti"></a>
+</section>
+<section class="part part5" onclick="gotoInputName()" style="display:none">
+    <div class="sprite part5-chat"></div>
+    <div class="sprite part5-btn" style="display:none">
+        <div class="sprite dian"></div>
+    </div>
+    <div class="sprite part1-footer"></div>
+</section>
+<section class="part part6" style="display:none">
+    <input type="text" id="name" class="input-name" autocomplete="no" maxlength="3">
+    <a href="javascript:;" class="submit" onclick="receive()"></a>
+</section>
+<section class="part part7" style="display:none">
+    <div class="myname"></div>
+    <a href="javascript:;" class="share-friend" onclick="showWeixin()"></a>
+    <a href="javascript:;" class="get-invite" onclick="playAgain()"></a>
+</section>
+<section class="weixin" style="display:none" onclick="closeWeixin()"></section>
+<script>
+    var img_resource = [
+        './resource/part1-bg.png',
+        './resource/sprite.png',
+        './resource/part2-bg.png',
+        './resource/part34-bg.png',
+        './resource/part6-bg.png',
+        './resource/part7-bg.png',
+        'http://cdn.happyjuzi.com/geshang/img/share.png',
+    ];
+</script>
+<script src="./resource/app.js"></script>
+
+</body>
+</html>

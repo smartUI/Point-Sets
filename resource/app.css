@@ -1,0 +1,89 @@
+a, body, div, footer, h1, h2, h3, h4, h5, h6, header, html, img, input, li, p, section, select, span, textarea, ul { margin: 0; padding: 0; -webkit-tap-highlight-color: rgba(255, 0, 0, 0); border: none; outline: 0; -webkit-touch-callout: none } body {font-family: '\5FAE\8F6F\96C5\9ED1', '黑体', 'Helvetica Neue', Helvetica, Arial, sans-serif;} .fixed-bottom, .fixed-screen-bottom { position: fixed; width: 100%; height: 100%; left: 0; bottom: 0 } .clearfix:after, .clearfix:before { display: table; line-height: 0; content: "" } .clearfix:after { clear: both } a { text-decoration: none } img { max-width: 100% } li { list-style: none }
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:7af8edb399281cf218e8c44ecbf9151e:1/1$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(sprite.png);background-size:8.8rem 5.24rem}
+
+.btn-guaduan {width:1.24rem; height:1.74rem; background-position: -1.33rem -3.48rem}
+.btn-jieting {width:1.25rem; height:1.74rem; background-position: -4.49rem -0.98rem}
+.btn-jingying {width:1.24rem; height:1.74rem; background-position: -2.65rem -3.48rem}
+.btn-jujue {width:1.25rem; height:1.74rem; background-position: 0 -3.48rem}
+.btn-mianti {width:1.24rem; height:1.74rem; background-position: -3.97rem -3.48rem}
+.dian {width:2.32rem; height:2.31rem; background-position: -6.48rem 0}
+.part1-footer {width:6.40rem; height:.90rem; background-position: 0 0}
+.part4-tips {width:4.97rem; height:.60rem; background-position: 0 -2.80rem}
+.part4-zoom {width:.60rem; height:.45rem; background-position: -5.05rem -2.80rem}
+.part5-btn {width:2.66rem; height:2.85rem; background-position: -5.82rem -2.39rem}
+.part5-chat {width:4.41rem; height:.85rem; background-position: 0 -0.98rem}
+
+
+/**app*/
+.toast-tip{display:none}
+.loading-wrapper{ background-color: #FFFFFF; width: 6.4rem; height: 100%; position: absolute; left: 50%; margin-left: -3.2rem; text-align: center; overflow: hidden; }
+.progress{ font-size: .26rem; color: #1abc9c; padding-top: .4rem; position: absolute; width: 100%; top: 50%; margin-top: .4rem; }
+.loading-wrapper .loading{ transition-duration: .6s;-webkit-transition-duration: .6s;display: block; border-right-color: #EC2E0B; border-bottom-color: #FFD751; border-left-color: #1abc9c; border-top-color: #CC51FF; }
+.screenshot-box .loading{ border-width:4px; }
+@-webkit-keyframes rotate { 0% { -webkit-transform:rotate(0); transform:rotate(0) } 100% { -webkit-transform:rotate(360deg); transform:rotate(360deg) } }
+@keyframes rotate { 0% { -webkit-transform:rotate(0); transform:rotate(0) } 100% { -webkit-transform:rotate(360deg); transform:rotate(360deg) } }
+.loading { position: absolute; top: 50%; left: 50%; z-index: 99; margin-left: -.5rem; margin-top: -.5rem; display: none; background-color: transparent; width: 1rem; height: 1rem; border: 3px solid #1abc9c; border-radius: 50%; border-top-color: transparent; border-left-color: transparent; -webkit-transition: all .25s; transition: all .25s; -moz-transition: all .25s; -webkit-animation: rotate .6s linear infinite; -moz-animation: rotate .6s linear infinite; animation: rotate 1s linear infinite; }
+
+.part { position: relative;width:6.4rem;overflow-x:hidden;}
+.part1{ box-sizing: border-box;background:url("part1-bg.png") no-repeat 0 0; background-size:6.4rem 9.17rem; height: 9.17rem; padding-bottom:.94rem;border-top: .1rem solid #F9F9F9;}
+.part1 .part1-footer{position:fixed;bottom:0;left:0;}
+.part1 .part1-footer span{font-size: .25rem; line-height: .94rem; display: block; height: 100%; padding-left: .4rem; color: #C0BFC0;}
+.part1 .part1-goto{ position: absolute; top: 0.9rem; height: 1rem; width: 5rem; left: 1.22rem; }
+.part1 .dian { right: 0; position: absolute; top: -0.5rem; z-index: 99; animation: "scaledian" 3s infinite; -webkit-animation: "scaledian" 3s infinite; }
+
+.part2 { background: #F6F6F6 url("part2-bg.png?1") no-repeat 0 .1rem;background-size:6.4rem 17.11rem; height: 17.11rem; }
+
+.part3{ background:#21252B url("part34-bg.png") no-repeat 0 0; background-size:6.4rem 11.05rem; height: 11.05rem; }
+.part3 .invite-chat{ padding-top: 6rem; font-size: .26rem; text-align: center; color: #fff; }
+.part3 .btn-jieting { position: absolute; bottom: .5rem; right: .5rem; }
+.part3 .btn-jujue { position: absolute; bottom: .5rem; left: .5rem; }
+
+.part4{ background:#21252B url("part34-bg.png") no-repeat 0 0; background-size:6.4rem 11.05rem; height: 11.05rem; }
+.part4 .part4-zoom{ position: absolute; left: .2rem; top: .2rem; }
+.part4 .part4-tips{ position: absolute; top: 6rem; left: 0.7rem; }
+.part4 .time{ font-size: .3rem; text-align: center; width: 100%; position: absolute; top: 7.4rem; color: #ddd; letter-spacing: 3px; }
+.part4 .btn-jingying { position: absolute; bottom: .5rem; left: .5rem; }
+.part4 .btn-mianti { position: absolute; bottom: .5rem; right: .5rem; }
+.part4 .btn-guaduan { position: absolute; bottom: .5rem; left: 2.5rem; }
+
+.part5{ height: 100%; box-sizing: content-box;background-color: #EBEBEB;position: absolute;}
+.part5 .part1-footer{position:fixed;bottom:0;left:0;}
+.part5 .part5-chat, .part5 .part5-btn{margin-left:.12rem;}
+.part5 .dian{left: 1.55rem; position: absolute; top: 2.8rem; animation: "scaledian" 3s infinite; -webkit-animation: "scaledian" 3s infinite; }
+
+@keyframes scaledian{
+    0% { transform: scale(1); -webkit-transform: scale(.8); opacity: 1; }
+    50% { transform: scale(.5); -webkit-transform: scale(.5); opacity: 0.68; }
+    100%{ transform: scale(1); -webkit-transform: scale(.8); opacity: 1; }
+}
+@-webkit-keyframes scaledian{
+    0%{ transform: scale(.8); -webkit-transform: scale(.8); opacity: 1; }
+    50%{ transform: scale(.5); -webkit-transform: scale(.5); opacity: 0.68; }
+    100%{ transform: scale(.8); -webkit-transform: scale(.8); opacity: 1; }
+}
+
+.part6{ background:url("part6-bg.png") no-repeat 0 0; background-size:6.4rem 11.36rem; height: 11.36rem; }
+.part6 .input-name:focus{ }
+
+.part6 .input-name{ position: absolute; top: 2.74rem; left: 2.11rem; width: 2.3rem; height: .75rem; background-color: transparent; letter-spacing: 0.3rem; box-sizing: border-box; font-size: .5rem; color: #690100; font-weight: bold; }
+.part6 .submit{ position: absolute; bottom: 2.3rem; display: block; width: 1.5rem; height: .8rem; left: 2.4rem; }
+
+.part7{ background:url("part7-bg.png") no-repeat 0 0; background-size:6.4rem 11.36rem; height: 11.36rem; }
+.part7 .share-friend{ position: absolute; bottom: .25rem; display: block; width: 2rem; height: .8rem; left: 1.2rem; }
+.part7 .get-invite{ position: absolute; bottom: .25rem; display: block; width: 2rem; height: .8rem; right: 1.1rem; }
+.part7 .myname{ position: absolute; left: 4.25rem; font-size: .3rem; color: #241A16; top: 3rem; writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr; }
+.weixin{ background:url('http://cdn.happyjuzi.com/geshang/img/share.png') no-repeat; background-size:6.4rem; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 99; }
+
+body,.part{position:absolute;min-height:100%;min-width:100%;}
