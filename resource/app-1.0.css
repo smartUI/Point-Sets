@@ -1,6 +1,6 @@
 a, body, div, footer, h1, h2, h3, h4, h5, h6, header, html, img, input, li, p, section, select, span, textarea, ul { margin: 0; padding: 0; -webkit-tap-highlight-color: rgba(255, 0, 0, 0); border: none; outline: 0; -webkit-touch-callout: none } body {font-family: '\5FAE\8F6F\96C5\9ED1', '黑体', 'Helvetica Neue', Helvetica, Arial, sans-serif;} .fixed-bottom, .fixed-screen-bottom { position: fixed; width: 100%; height: 100%; left: 0; bottom: 0 } .clearfix:after, .clearfix:before { display: table; line-height: 0; content: "" } .clearfix:after { clear: both } a { text-decoration: none } img { max-width: 100% } li { list-style: none }
 /* ----------------------------------------------------
-   created with http://www.codeandweb.com/texturepacker 
+   created with http://www.codeandweb.com/texturepacker
    ----------------------------------------------------
    $TexturePacker:SmartUpdate:7af8edb399281cf218e8c44ecbf9151e:1/1$
    ----------------------------------------------------
@@ -87,3 +87,267 @@ a, body, div, footer, h1, h2, h3, h4, h5, h6, header, html, img, input, li, p, s
 .weixin{ background:url("http://cdn.happyjuzi.com/geshang/img/share.png") no-repeat; background-size:6.4rem; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 99; }
 
 body,.part{position:absolute;min-height:100%;min-width:100%;}
+
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:513dc21963a356b43398be81342ab8d4:1/1$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite67 {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url("http://cdn.happyjuzi.com/geshang/resource/part67-sprite.png");background-size:10.19rem 8.65rem;}
+
+.part6-djt {width:3.49rem; height:4.16rem; background-position: -0.10rem -3.92rem}
+.part6-gy-text {width:4.61rem; height:.42rem; background-position: -3.69rem -8.13rem}
+.part6-lq {width:.92rem; height:.32rem; background-position: -0.10rem -8.18rem}
+.part6-sr {width:2.43rem; height:.75rem; background-position: -5.83rem -2.08rem}
+.part6-srmz {width:3.88rem; height:.44rem; background-position: -5.83rem -0.80rem}
+.part7-btn {width:3.98rem; height:.60rem; background-position: -5.83rem -0.10rem}
+.part7-gaizhan {width:.61rem; height:.58rem; background-position: -5.83rem -2.93rem}
+.part7-jiudian {width:6.40rem; height:1.11rem; background-position: -3.69rem -3.92rem}
+.part7-juanzhou {width:5.63rem; height:3.72rem; background-position: -0.10rem -0.10rem}
+.part7-t1 {width:.43rem; height:1.66rem; background-position: -9.61rem -5.13rem}
+.part7-t2 {width:.27rem; height:1.42rem; background-position: -8.36rem -2.08rem}
+.part7-t3 {width:.27rem; height:1.81rem; background-position: -9.09rem -1.34rem}
+.part7-t4 {width:.29rem; height:1.84rem; background-position: -9.22rem -5.13rem}
+.part7-t5 {width:.26rem; height:1.44rem; background-position: -8.73rem -2.08rem}
+.part7-t6 {width:.28rem; height:1.42rem; background-position: -9.81rem -0.80rem}
+.part7-text1 {width:5.43rem; height:1.82rem; background-position: -3.69rem -5.13rem}
+.part7-text2 {width:4.37rem; height:.98rem; background-position: -3.69rem -7.05rem}
+.part67-title {width:3.11rem; height:.64rem; background-position: -5.83rem -1.34rem}
+
+.part6{background-image:url("http://cdn.happyjuzi.com/geshang/resource/part6-bg1.png");}
+.part6-yq{display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url("http://cdn.happyjuzi.com/geshang/resource/part6-yq.png");background-size:4.41rem 3.76rem;}
+.part6-kk{ display: inline-block; overflow: hidden; background-repeat: no-repeat; background-image: url("http://cdn.happyjuzi.com/geshang/resource/part6-kk.png"); background-size: 6.03rem 10.89rem; width: 6.03rem; height: 10.89rem; position: absolute; top: 0.18rem; left: 0.18rem; }
+.part7{ background-image:url("http://cdn.happyjuzi.com/geshang/resource/part7-bg1.png");}
+
+.part67-title{ position: absolute; top: 0.65rem; left: 1.645rem; }
+.part6-srmz{ left: 1.26rem; position: absolute; top: 1.85rem; }
+.part6-sr{ left: 1.985rem; position: absolute; top: 2.73rem; width: 2.44rem; height: .76rem; }
+.part6-yq{ width: 4.41rem; height: 3.76rem; position: absolute; top: 4.05rem; left: 1rem; }
+.part6-djt{ position: absolute; left: 1.455rem; top: 4.15rem; }
+.part6-lq{ position: absolute; left: 2.75rem; top: 8.88rem; }
+.part6-gy-text{ position: absolute; left: .9rem; top: 10rem; }
+.part7-juanzhou{ position: relative; top: 1.65rem; left: 0.38rem; }
+.part7-text1{ position: absolute; top: 5.12rem; left: 0.48rem; }
+.part7-jiudian{ position: absolute; top: 7.15rem; left: 0; }
+.part7-text2{ position: absolute; top: 8.85rem; left: 1.01rem; }
+.part7 .share-friend { position: absolute; bottom: .25rem; display: block; width: 2rem; height: .8rem; left: 1.2rem; background-position: -5.73rem 0; }
+.part7 .get-invite { position: absolute; bottom: .25rem; display: block; right: 1.1rem; width: 2rem; height: .8rem; background-position: -7.74rem 0; }
+.part7-t1 { position: absolute; right: .95rem; top: 1.05rem; }
+.part7-t2 { position: absolute; right: 1.9rem; top: 1.05rem; }
+.part7-t3 { position: absolute; right: 2.3rem; top: 1.05rem; }
+.part7-t4 { position: absolute; right: 2.7rem; top: 1.05rem; }
+.part7-t5 { position: absolute; right: 3.1rem; top: 1.05rem; }
+.part7-t6 { position: absolute; right: 3.5rem; top: 1.05rem; }
+.part7-gaizhan { position: absolute; right: 3.9rem; top: 1.05rem; }
+.part7 .myname{ left: 3.85rem; top: 1.3rem; }
+.part6 .submit { bottom: 2rem; left: 2.45rem; }
+
+
+
+/**动画**/
+@-webkit-keyframes titleOut{
+    from{ transform: translate(0,-5rem); -webkit-transform: translate(0,-5rem); }
+    to{ transform: translate(0,0); -webkit-transform: translate(0,0); }
+}
+@keyframes titleOut{
+    from{ transform: translate(0,-5rem); }
+    to { transform: translate(0,0); }
+}
+.part6-animate .part67-title{
+    animation:titleOut .5s ease-in-out;
+    -webkit-animation:titleOut .5s ease-in-out;
+}
+
+
+/**动画**/
+@-webkit-keyframes srmzOut{
+    0%{ transform: translate(-150%,0); -webkit-transform: translate(-150%,0); opacity:0; }
+    95%{ transform: translate(10%,0); -webkit-transform: translate(10%,0); opacity:1; }
+    100%{ transform: translate(0,0); -webkit-transform: translate(0,0); opacity:1; }
+}
+@keyframes srmzOut{
+    0%{ transform: translate(-150%,0); opacity:0; }
+    95%{ transform: translate(10%,0); opacity:1; }
+    100%{ transform: translate(0,0); opacity:1; }
+}
+.part6-animate .part6-srmz{
+    opacity:0;
+    animation:srmzOut .5s .5s ease-out forwards;
+    -webkit-animation:srmzOut .5s .5s ease-out forwards;
+}
+
+/**动画**/
+@-webkit-keyframes srOut{
+    from{ opacity:0; }
+    to { opacity:1; }
+}
+@keyframes srOut{
+    from{ opacity:0; }
+    to { opacity:1; }
+}
+.part6-animate .part6-sr{
+    opacity:0;
+    animation:srOut .5s 1s ease-out forwards;
+    -webkit-animation:srOut .5s 1s ease-out forwards;
+}
+
+
+/**动画**/
+@-webkit-keyframes kkzoomOut{
+    0%{ transform:translate(0,0) scale(1.05); -webkit-transform:translate(0,0) scale(1.05); opacity:.1; }
+    100%{ transform:translate(0,0) scale(1); -webkit-transform:translate(0,0) scale(1); opacity:1; }
+}
+@keyframes kkzoomOut{
+    0%{ transform:translate(0,0) scale(1.05); opacity:.1; }
+    100%{ transform:translate(0,0) scale(1); opacity:1; }
+}
+.part6-animate .part6-kk{
+    opacity:0;
+    animation:kkzoomOut .5s 2.5s ease-out forwards;
+    -webkit-animation:kkzoomOut .5s 2.5s ease-out forwards;
+}
+
+/**动画**/
+@-webkit-keyframes dianjianOut{
+    0%{ transform:translate(0,0) scale(0.95); -webkit-transform:translate(0,0) scale(0.95); opacity:.1; }
+    90%{ transform:translate(0,0) scale(1.1); -webkit-transform:translate(0,0) scale(1.1); opacity:1; }
+    100%{ transform:translate(0,0) scale(1); -webkit-transform:translate(0,0) scale(1); opacity:1; }
+}
+@keyframes dianjianOut{
+    0%{ transform:translate(0,0) scale(0.95); opacity:.1; }
+    90%{ transform:translate(0,0) scale(1.1); opacity:1; }
+    100%{ transform:translate(0,0) scale(1); opacity:1; }
+}
+.part6-animate .part6-djt, .part6-animate .part6-yq{
+    opacity:0;
+    animation:dianjianOut .5s 1.5s ease-out forwards;
+    -webkit-animation:dianjianOut .5s 1.5s ease-out forwards;
+}
+
+/**动画**/
+@-webkit-keyframes yqOut{
+    0%{ transform:translate(0,0) scale(0.5); -webkit-transform:translate(0,0) scale(0.5); opacity:.1; }
+    100%{ transform:translate(0,0) scale(1); -webkit-transform:translate(0,0) scale(1); opacity:1; }
+}
+@keyframes yqOut{
+    0%{ transform:translate(0,0) scale(0.5); opacity:.1; }
+    100%{ transform:translate(0,0) scale(1); opacity:1; }
+}
+.part6-animate .part6-yq{
+    opacity:0;
+    animation:yqOut .2s 1.8s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+    -webkit-animation:yqOut .2s 1.8s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+}
+
+.part6-animate .part6-lq, .part6-animate .part6-gy-text{
+    opacity:0;
+    animation:srOut .5s 1.9s ease-out forwards;
+    -webkit-animation:srOut .5s 1.9s ease-out forwards;
+}
+
+
+.part7-animate .part67-title{
+    animation:titleOut .5s 0s ease-in-out;
+    -webkit-animation:titleOut .5s 0s ease-in-out;
+}
+
+/**动画**/
+@-webkit-keyframes t1Out{
+    0%{ transform: translate(150%,0); -webkit-transform: translate(150%,0); opacity:0; }
+    95%{ transform: translate(-10%,0); -webkit-transform: translate(-10%,0); opacity:1; }
+    100%{ transform: translate(0,0); -webkit-transform: translate(0,0); opacity:1; }
+}
+@keyframes t1Out{
+    0%{ transform: translate(150%,0); opacity:0; }
+    95%{ transform: translate(-10%,0); opacity:1; }
+    100%{ transform: translate(0,0); opacity:1; }
+}
+.part7-animate .part7-text1{
+    opacity:0;
+    /*animation:t1Out .5s .5s ease-out forwards;*/
+    /*-webkit-animation:t1Out .5s .5s ease-out forwards;*/
+    animation:t1Out .5s 1.5s ease-out forwards;
+    -webkit-animation:t1Out .5s 1.5s ease-out forwards;
+}
+
+.part7-animate .part7-jiudian{
+    opacity:0;
+    /*animation:srmzOut .5s .5s ease-out forwards;*/
+    /*-webkit-animation:srmzOut .5s .5s ease-out forwards;*/
+    animation:srmzOut .5s 1.5s ease-out forwards;
+    -webkit-animation:srmzOut .5s 1.5s ease-out forwards;
+}
+
+.part7-animate .part7-t1{
+    opacity:0;
+    animation:srOut .25s 1s linear forwards;
+    -webkit-animation:srOut .5s .25s linear forwards;
+}
+
+.part7-animate .myname{
+    opacity:0;
+    animation:srOut .25s 1.25s linear forwards;
+    -webkit-animation:srOut .25s .5s linear forwards;
+}
+.part7-animate .part7-t2{
+    opacity:0;
+    animation:srOut .25s 1.5s linear forwards;
+    -webkit-animation:srOut .25s .75s linear forwards;
+}
+.part7-animate .part7-t3{
+    opacity:0;
+    animation:srOut .25s 1.75s linear forwards;
+    -webkit-animation:srOut .25s 1s linear forwards;
+}
+.part7-animate .part7-t4{
+    opacity:0;
+    animation:srOut .25s 2s linear forwards;
+    -webkit-animation:srOut .25s 1.25s linear forwards;
+}
+.part7-animate .part7-t5{
+    opacity:0;
+    animation:srOut .25s 2.25s linear forwards;
+    -webkit-animation:srOut .25s 1.5s linear forwards;
+}
+.part7-animate .part7-t6{
+    opacity:0;
+    animation:srOut .25s 2.5s linear forwards;
+    -webkit-animation:srOut .25s 1.75s linear forwards;
+}
+
+
+/**动画**/
+@-webkit-keyframes gzOut{
+    0%{ transform: translate(0,0) scale(2); -webkit-transform: translate(0,0) scale(2);; opacity:.5; }
+    100%{ transform: translate(0,0) scale(1); -webkit-transform: translate(0,0) scale(1); opacity:1; }
+}
+@keyframes gzOut{
+    0%{ transform: translate(0,0) scale(2); opacity:.5; }
+    100%{ transform: translate(0,0) scale(1); opacity:1; }
+}
+.part7-animate .part7-gaizhan{
+    opacity:0;
+    animation:gzOut .5s 1.75s linear forwards;
+    -webkit-animation:gzOut .5s 1.75s linear forwards;
+}
+
+.part7-animate .part7-text2{
+    opacity:0;
+    /*animation:srmzOut .5s .5s ease-out forwards;*/
+    /*-webkit-animation:srmzOut .5s .5s ease-out forwards;*/
+    animation:t1Out .5s 1.5s ease-out forwards;
+    -webkit-animation:t1Out .5s 1.5s ease-out forwards;
+}
+
+.part7-animate .part7-btn{
+    opacity:0;
+    animation:srOut .5s 1.5s ease-out forwards;
+    -webkit-animation:srOut .5s 1.5s ease-out forwards;
+}

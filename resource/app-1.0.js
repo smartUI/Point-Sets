@@ -28,6 +28,7 @@ function handleScreenChange() {
 }
 window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", handleScreenChange, false);
 */
+var part67Audio;
 function loadAudio(src, callback) {
     var audio = new Audio(src);
     audio.onloadedmetadata = callback;
@@ -102,7 +103,13 @@ function gotoAcceptVoiceChat(){
 
 function gotoInputName(){
     goto(6,function(){
+        document.querySelector('.part6').classList.add('part6-animate');
         document.title='点将台邀请涵';
+        if( !part67Audio ){
+//            part67Audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/part67.mp3');
+            part67Audio = loadAudio('./resource/part67.mp3');
+            part67Audio.loop=false;
+        }
     });
 }
 
@@ -112,11 +119,21 @@ function receive(){
         alert('请留下您大名');
     }else{
         document.querySelector('.myname').innerText=val;
-        document.title=val+'已接受戈十一点将台邀请函，戈友们，约吗？';
-        goto(7);
+        document.title=val+'戈友们，快来领取你的戈十一点将台邀请函';
+        goEndPage();
     }
 }
-
+function goEndPage(){
+    goto(7,function(){
+        document.querySelector('.part6').classList.remove('part6-animate');
+        document.querySelector('.part7').classList.add('part7-animate');
+        if( !part67Audio ){
+//            part67Audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/part67.mp3');
+            part67Audio = loadAudio('./resource/part67.mp3');
+            part67Audio.loop=false;
+        }
+    });
+}
 function showWeixin(){
     document.querySelector('.weixin').style.display="block";
 }
@@ -129,6 +146,10 @@ function playAgain(){
     });
     document.querySelector('#name').value='';
     document.querySelector('#time').innerHTML='00:01';
+    document.querySelector('.part7').classList.remove('part7-animate');
+    part67Audio.pause();
+    part67Audio.remove && part67Audio.remove();
+    part67Audio=null;
 }
 //loading
 function loading(img_resource,progress,callback){
@@ -194,5 +215,20 @@ loading(img_resource,document.getElementById('progress-num'),function(){
         loading.style.opacity = 0;
         loading.style.display = 'none';
     }
-    document.querySelector('.part1').style.display = 'block';
+    var _from = getParameterByName('from');
+    if( _from == 'timeline' || _from == 'singlemessage' ){
+        goEndPage();
+    }else{
+        document.querySelector('.part1').style.display = 'block';
+    }
 });
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
