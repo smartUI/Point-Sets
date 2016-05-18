@@ -46,16 +46,16 @@ a, body, div, footer, h1, h2, h3, h4, h5, h6, header, html, img, input, li, p, s
 
 .part3{ background:#21252B url("http://cdn.happyjuzi.com/geshang/resource/part34-bg.png") no-repeat 0 0; background-size:6.4rem 11.05rem; height: 11.05rem; }
 .part3 .invite-chat{ padding-top: 6rem; font-size: .26rem; text-align: center; color: #fff; }
-.part3 .btn-jieting { position: absolute; bottom: .5rem; right: .5rem; }
-.part3 .btn-jujue { position: absolute; bottom: .5rem; left: .5rem; }
+.part3 .btn-jieting { position: absolute; bottom: 1rem; right: .5rem; }
+.part3 .btn-jujue { position: absolute; bottom: 1rem; left: .5rem; }
 
 .part4{ background:#21252B url("http://cdn.happyjuzi.com/geshang/resource/part34-bg.png") no-repeat 0 0; background-size:6.4rem 11.05rem; height: 11.05rem; }
 .part4 .part4-zoom{ position: absolute; left: .2rem; top: .2rem; }
-.part4 .part4-tips{ position: absolute; top: 6rem; left: 0.7rem; }
-.part4 .time{ font-size: .3rem; text-align: center; width: 100%; position: absolute; top: 7.4rem; color: #ddd; letter-spacing: 3px; }
-.part4 .btn-jingying { position: absolute; bottom: .5rem; left: .5rem; }
-.part4 .btn-mianti { position: absolute; bottom: .5rem; right: .5rem; }
-.part4 .btn-guaduan { position: absolute; bottom: .5rem; left: 2.5rem; }
+.part4 .part4-tips{ position: absolute; top: 5.8rem; left: 0.7rem; }
+.part4 .time{ font-size: .3rem; text-align: center; width: 100%; position: absolute; top: 7rem; color: #ddd; letter-spacing: 3px; }
+.part4 .btn-jingying { position: absolute; bottom:1rem; left: .5rem; }
+.part4 .btn-mianti { position: absolute; bottom:1rem; right: .5rem; }
+.part4 .btn-guaduan { position: absolute; bottom:1rem; left: 2.5rem; }
 
 .part5{ height: 100%; box-sizing: content-box;background-color: #EBEBEB;position: absolute;}
 .part5 .part1-footer{position:fixed;bottom:0;left:0;}
@@ -128,10 +128,10 @@ body,.part{position:absolute;min-height:100%;min-width:100%;}
 .part67-title{ position: absolute; top: 0.65rem; left: 1.645rem; }
 .part6-srmz{ left: 1.26rem; position: absolute; top: 1.85rem; }
 .part6-sr{ left: 1.985rem; position: absolute; top: 2.73rem; width: 2.44rem; height: .76rem; }
-.part6-yq{ width: 4.41rem; height: 3.76rem; position: absolute; top: 4.05rem; left: 1rem; }
-.part6-djt{ position: absolute; left: 1.455rem; top: 4.15rem; }
-.part6-lq{ position: absolute; left: 2.75rem; top: 8.88rem; }
-.part6-gy-text{ position: absolute; left: .9rem; top: 10rem; }
+.part6-yq{ width: 4.41rem; height: 3.76rem; position: absolute; top: 3.8rem; left: 1rem; }
+.part6-djt{ position: absolute; left: 1.455rem; top: 3.9rem; }
+.part6-lq{ position: absolute; left: 2.75rem; top: 8.5rem; }
+.part6-gy-text{ position: absolute; left: .9rem; top: 9.2rem; }
 .part7-juanzhou{ position: relative; top: 1.3rem; left: 0.38rem; }
 .part7-text1{ position: absolute; top: 4.8rem; left: 0.48rem; }
 .part7-jiudian{ position: absolute; top:6.8rem; left: 0; }
@@ -146,7 +146,7 @@ body,.part{position:absolute;min-height:100%;min-width:100%;}
 .part7-t6 { position: absolute; right: 3.5rem; top: 1.05rem; }
 .part7-gaizhan { position: absolute; right: 3.9rem; top: 1.05rem; }
 .part7 .myname{ left: 3.85rem; top: 1.3rem; }
-.part6 .submit { bottom: 2rem; left: 2.45rem; }
+.part6 .submit { bottom: 2.35rem; left: 2.45rem; }
 
 
 
