@@ -28,14 +28,14 @@ function handleScreenChange() {
 }
 window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", handleScreenChange, false);
 */
-var part67Audio;
+var _audio,part67Audio;
 function loadAudio(src, callback) {
-    var audio = new Audio(src);
-    audio.onloadedmetadata = callback;
-    audio.src = src;
-    audio.play();
-    audio.loop=false;
-    return audio;
+    _audio || (_audio = new Audio(src));
+    _audio.onloadedmetadata = callback;
+    _audio.src = src;
+    _audio.loop=false;
+    _audio.play();
+    return _audio;
 };
 
 function goto(index,callback){
@@ -78,14 +78,16 @@ function gotoVoiceChat(){
 function gotoAcceptVoiceChat(){
     goto(4,function(){
         document.title='语音电话';
-        var audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/voice.mp3');
+        var audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/voice.wav');
         var _time= 1,__time=1;
         window._timerhandle=setInterval(function(){
             _time++;
             __time = _time < 10 ?  '0'+_time : _time;
             document.querySelector('#time').innerHTML='00:'+__time;
         },1000);
-        audio.addEventListener('ended',function(e){
+
+        function endedHandle(e){
+            audio.removeEventListener('ended',endedHandle);
             clearInterval(window._timerhandle);
             setTimeout(function(){
                 goto(5,function(){
@@ -96,7 +98,9 @@ function gotoAcceptVoiceChat(){
                     },1000)
                 })
             },1000)
-        },false)
+        }
+
+        audio.addEventListener('ended',endedHandle,false)
 
     })
 }
@@ -105,11 +109,9 @@ function gotoInputName(){
     goto(6,function(){
         document.querySelector('.part6').classList.add('part6-animate');
         document.title='点将台邀请涵';
-        if( !part67Audio ){
-//            part67Audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/part67.mp3');
-            part67Audio = loadAudio('./resource/part67.mp3');
-            part67Audio.loop=false;
-        }
+        part67Audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/jlbhd.mp3');
+        //part67Audio = loadAudio('./resource/jlbhd.mp3');
+        part67Audio.loop=true;
     });
 }
 
@@ -119,7 +121,7 @@ function receive(){
         alert('请留下您大名');
     }else{
         document.querySelector('.myname').innerText=val;
-        document.title=val+'戈友们，快来领取你的戈十一点将台邀请函';
+        document.title='戈友们，快来领取你的戈十一点将台邀请函';
         goEndPage();
     }
 }
@@ -128,9 +130,9 @@ function goEndPage(){
         document.querySelector('.part6').classList.remove('part6-animate');
         document.querySelector('.part7').classList.add('part7-animate');
         if( !part67Audio ){
-//            part67Audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/part67.mp3');
-            part67Audio = loadAudio('./resource/part67.mp3');
-            part67Audio.loop=false;
+            part67Audio = loadAudio('http://cdn.happyjuzi.com/geshang/resource/jlbhd.mp3');
+            //part67Audio = loadAudio('./resource/jlbhd.mp3');
+            part67Audio.loop=true;
         }
     });
 }
@@ -147,9 +149,12 @@ function playAgain(){
     document.querySelector('#name').value='';
     document.querySelector('#time').innerHTML='00:01';
     document.querySelector('.part7').classList.remove('part7-animate');
-    part67Audio.pause();
-    part67Audio.remove && part67Audio.remove();
-    part67Audio=null;
+    if(_audio){
+        _audio.pause && _audio.pause();
+        _audio.loop=false;
+        _audio.currentTime=0;
+        _audio.remove && _audio.remove();
+    }
 }
 //loading
 function loading(img_resource,progress,callback){
